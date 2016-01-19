@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp" >
+
+    <ImageView
+        android:contentDescription="@string/cake"
+        android:id="@+id/m1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/c1" />
+
+    <TextView
+        android:id="@+id/cakeid"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/m1"
+        android:gravity="center_vertical"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@id/m1" />
+
+    <TextView
+        android:id="@+id/cakesize"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/cakekind"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cakename"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/m1"
+        android:layout_alignLeft="@+id/cakeid"
+        android:gravity="center_vertical"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cakekind"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/m1"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/cakename"
+        android:gravity="center_vertical"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/sale"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:gravity="center_vertical"
+        android:text="@string/sale"
+        android:textSize="12sp" />
+
+</RelativeLayout>

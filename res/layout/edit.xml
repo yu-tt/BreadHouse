@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCCCC"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shu.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bread_house_count"
+        android:textColor="#999999"
+         />
+      
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/kind_id1"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="@string/kind_name"
+            android:textColor="#999999" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:text="@string/cake"
+            android:textColor="#999999" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:text="@string/pizza"
+            android:textColor="#999999" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:text="@string/bread"
+            android:textColor="#999999" />
+        
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:text="@string/sale1"
+            android:textColor="#999999" />
+
+        <EditText 
+            android:id="@+id/editsalenum1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" 
+            android:textColor="#999999" />
+
+        <EditText 
+            android:id="@+id/editsalenum2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" 
+            android:textColor="#999999" />
+
+        <EditText 
+            android:id="@+id/editsalenum3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" 
+            android:textColor="#999999" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/linearLayout2"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:text="@string/num1"
+            android:textColor="#999999" />
+
+        <TextView
+            android:id="@+id/editnownum1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textColor="#999999" />
+
+        <TextView
+            android:id="@+id/editnownum2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textColor="#999999" />
+
+        <TextView
+            android:id="@+id/editnownum3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textColor="#999999" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+         android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/linearLayout3"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/grade"
+            android:textColor="#999999" />
+
+        <TextView
+            android:id="@+id/editgrade"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textColor="#999999" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit2"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout3"
+        android:text="@string/save"
+        android:textColor="#009966"
+        android:textSize="12sp" />
+
+</RelativeLayout>

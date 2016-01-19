@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="20dp"
+   
+    tools:context="${relativePackage}.${activityClass}" >
+
+	 <TextView
+	     android:id="@+id/t1"
+	     android:layout_width="70dp"
+	     android:layout_height="50dp"
+	     android:text="@string/name"
+	     android:gravity="center_vertical"
+	     android:textSize="20sp" />
+	 
+	 <EditText
+	     android:id="@+id/e1"
+	     android:layout_width="200dp"
+	     android:layout_height="50dp"
+	     android:layout_toRightOf="@id/t1"
+	     android:hint="@string/putin" />
+
+	 <TextView
+	        android:id="@+id/t2"
+	        android:layout_below="@+id/t1"
+	        android:layout_width="70dp"
+	        android:layout_height="50dp"
+	        android:text="@string/kind1"
+	         android:textSize="20sp"
+	         android:gravity="center_vertical"
+	       />
+	 
+	 <EditText
+	        android:id="@+id/e2"
+	        android:layout_below="@+id/e1"
+	        android:layout_toRightOf="@id/t2"
+	        android:layout_width="200dp"
+	        android:layout_height="50dp"
+	        android:hint="@string/putin" />
+	 <TextView
+	        android:id="@+id/t3"
+	         android:layout_below="@+id/t2"
+	        android:layout_width="70dp"
+	        android:layout_height="50dp"
+	        android:text="@string/size"
+	        android:gravity="center_vertical"
+	         android:textSize="20sp"
+	       />
+	 
+	 <EditText
+	        android:id="@+id/e3"
+	        android:layout_below="@+id/e2"
+	        android:layout_toRightOf="@id/t3"
+	        android:layout_width="200dp"
+	        android:layout_height="50dp"
+	        android:hint="@string/putin" />
+	 <TextView
+	        android:id="@+id/t4"
+	         android:layout_below="@+id/t3"
+	        android:layout_width="70dp"
+	        android:gravity="center_vertical"
+	        android:layout_height="50dp"
+	        android:text="@string/id"
+	         android:textSize="20sp"
+	       />
+	 
+	 <EditText
+	     android:id="@+id/e4"
+	     android:layout_width="200dp"
+	     android:layout_height="50dp"
+	     android:layout_alignRight="@+id/e3"
+	     android:layout_below="@+id/e3"
+	     android:layout_toRightOf="@id/t4"
+	     android:hint="@string/putin" />
+
+	  <Button
+	      android:id="@+id/b1"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_alignRight="@+id/e4"
+	      android:layout_below="@+id/e4"
+	      android:layout_marginTop="36dp"
+	      android:text="@string/make_pizza" />
+	  
+	  <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b1" >
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
